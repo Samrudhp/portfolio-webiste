@@ -311,31 +311,98 @@
 }
 
 @media (max-width: 768px) {
-  .search-container {
-    flex-direction: column;
+  .embedding-visualizer {
+    padding: 2rem 1rem;
   }
   
-  .search-input,
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  
   .search-button {
     width: 100%;
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
   
   .predefined-queries {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .query-chip {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
   
   .results-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .result-card {
+    padding: 1rem;
   }
   
   .results-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.8rem;
   }
   
   .visualization-info {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .embedding-visualizer {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .search-input {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.85rem;
+  }
+  
+  .search-button {
+    padding: 0.7rem;
+    font-size: 0.85rem;
+  }
+  
+  .query-chip {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+  
+  .result-card {
+    padding: 0.8rem;
   }
 }
 

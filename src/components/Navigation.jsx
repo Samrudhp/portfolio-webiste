@@ -5,6 +5,7 @@ import './Navigation.css';
 function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
     { name: 'Home', id: 'hero' },
@@ -47,6 +48,7 @@ function Navigation() {
         top: elementPosition,
         behavior: 'smooth'
       });
+      setIsMobileMenuOpen(false); // Close menu after navigation
     }
   };
 
@@ -61,12 +63,25 @@ function Navigation() {
         <motion.div 
           className="nav-logo"
           whileHover={{ scale: 1.05 }}
+          onClick={() => scrollToSection('hero')}
         >
           <span className="logo-icon">SP</span>
           <span className="logo-text">Samrudh P</span>
         </motion.div>
 
-        <ul className="nav-links">
+        {/* Hamburger Menu Button */}
+        <button 
+          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        {/* Desktop Navigation */}
+        <ul className="nav-links desktop-nav">
           {navItems.map((item, index) => (
             <motion.li
               key={item.id}
@@ -104,6 +119,49 @@ function Navigation() {
             </motion.button>
           </motion.li>
         </ul>
+
+        {/* Mobile Navigation Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              className="mobile-menu"
+              initial={{ opacity: 0, x: '100%' }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: '100%' }}
+              transition={{ type: 'tween', duration: 0.3 }}
+            >
+              <ul className="mobile-nav-links">
+                {navItems.map((item, index) => (
+                  <motion.li
+                    key={item.id}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.05 }}
+                  >
+                    <button
+                      className={`mobile-nav-link ${activeSection === item.id ? 'active' : ''}`}
+                      onClick={() => scrollToSection(item.id)}
+                    >
+                      {item.name}
+                    </button>
+                  </motion.li>
+                ))}
+                <motion.li
+                  initial={{ opacity: 0, x: 50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: navItems.length * 0.05 }}
+                >
+                  <button
+                    className="mobile-connect-btn"
+                    onClick={() => scrollToSection('contact')}
+                  >
+                    Connect
+                  </button>
+                </motion.li>
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </motion.nav>
   );
