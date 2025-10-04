@@ -1,0 +1,244 @@
+.footer {
+  background: #161B22;
+  border-top: 2px solid rgba(0, 255, 163, 0.3);
+  padding: 4rem 2rem 2rem;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-section {
+  padding: 2rem;
+}
+
+.footer-title {
+  color: #FF3C78;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(255, 60, 120, 0.5);
+}
+
+.footer-subtitle {
+  color: #8B949E;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: rgba(13, 17, 23, 0.6);
+  border: 2px solid rgba(0, 255, 163, 0.3);
+  border-radius: 10px;
+  color: #C9D1D9;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #00FFA3;
+  box-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+  background: rgba(13, 17, 23, 0.8);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #8B949E;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #00FFA3 0%, #00B0FF 100%);
+  border: none;
+  border-radius: 50px;
+  color: #0D1117;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(0, 255, 163, 0.4);
+}
+
+.submit-button:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 163, 0.6);
+  transform: translateY(-2px);
+}
+
+.social-title {
+  color: #00B0FF;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 15px rgba(0, 176, 255, 0.5);
+}
+
+.social-subtitle {
+  color: #8B949E;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.social-network {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-node {
+  background: rgba(13, 17, 23, 0.6);
+  border: 2px solid rgba(0, 176, 255, 0.3);
+  border-radius: 15px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-node::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(0, 176, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.social-node:hover::before {
+  opacity: 1;
+}
+
+.social-node:hover {
+  border-color: #00B0FF;
+  box-shadow: 0 0 25px rgba(0, 176, 255, 0.4);
+  background: rgba(13, 17, 23, 0.8);
+}
+
+.social-icon {
+  font-size: 1.3rem;
+  font-weight: 800;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(0, 176, 255, 0.5);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(0, 176, 255, 0.1), rgba(0, 255, 163, 0.05));
+  box-shadow: 0 0 20px rgba(0, 176, 255, 0.3),
+              inset 0 0 10px rgba(0, 176, 255, 0.1);
+  color: #00B0FF;
+}
+
+.social-label {
+  color: #C9D1D9;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.connection-svg {
+  margin-top: 1rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(139, 148, 158, 0.2);
+  padding-top: 2rem;
+}
+
+.footer-info {
+  text-align: center;
+  color: #8B949E;
+}
+
+.footer-info p {
+  margin: 0.5rem 0;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+
+.tech-stack {
+  font-size: 0.9rem;
+  color: #6E7681;
+}
+
+.rag-badge {
+  font-size: 1rem;
+  color: #00FFA3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.badge-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px rgba(0, 255, 163, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 15px rgba(0, 255, 163, 0.8));
+  }
+}
+
+@media (max-width: 968px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .social-network {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 2rem;
+  }
+  
+  .social-network {
+    grid-template-columns: 1fr;
+  }
+}

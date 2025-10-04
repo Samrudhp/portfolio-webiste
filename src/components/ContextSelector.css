@@ -1,0 +1,175 @@
+.context-selector {
+  padding: 3rem 2rem;
+  background: #0D1117;
+  border-top: 2px solid rgba(0, 255, 163, 0.2);
+  border-bottom: 2px solid rgba(0, 255, 163, 0.2);
+}
+
+.context-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.context-label {
+  text-align: center;
+  color: #8B949E;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.query-icon {
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00FFA3;
+  border-radius: 6px;
+  background: rgba(0, 255, 163, 0.1);
+  color: #00FFA3;
+  box-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
+}
+
+.context-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.context-button {
+  position: relative;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.context-button.all {
+  border-color: #8B949E;
+  color: #C9D1D9;
+}
+
+.context-button.all:hover,
+.context-button.all.active {
+  border-color: #C9D1D9;
+  color: #FFFFFF;
+  box-shadow: 0 0 20px rgba(201, 209, 217, 0.4);
+}
+
+.context-button.sde {
+  border-color: #00B0FF;
+  color: #00B0FF;
+}
+
+.context-button.sde:hover,
+.context-button.sde.active {
+  border-color: #00B0FF;
+  background: rgba(0, 176, 255, 0.1);
+  box-shadow: 0 0 25px rgba(0, 176, 255, 0.6);
+}
+
+.context-button.ai-ml {
+  border-color: #00FFA3;
+  color: #00FFA3;
+}
+
+.context-button.ai-ml:hover,
+.context-button.ai-ml.active {
+  border-color: #00FFA3;
+  background: rgba(0, 255, 163, 0.1);
+  box-shadow: 0 0 25px rgba(0, 255, 163, 0.6);
+}
+
+.context-button.genai {
+  border-color: #FF3C78;
+  color: #FF3C78;
+}
+
+.context-button.genai:hover,
+.context-button.genai.active {
+  border-color: #FF3C78;
+  background: rgba(255, 60, 120, 0.1);
+  box-shadow: 0 0 25px rgba(255, 60, 120, 0.6);
+}
+
+.active-indicator {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+.context-info {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #C9D1D9;
+  font-size: 1rem;
+  padding: 1rem;
+  background: rgba(0, 255, 163, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 163, 0.2);
+}
+
+.info-icon {
+  font-size: 1rem;
+  font-weight: 800;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00FFA3;
+  border-radius: 50%;
+  background: rgba(0, 255, 163, 0.1);
+  color: #00FFA3;
+  box-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
+}
+
+.context-info strong {
+  color: #00FFA3;
+  text-shadow: 0 0 10px rgba(0, 255, 163, 0.5);
+}
+
+.similarity-badge {
+  padding: 0.3rem 1rem;
+  background: rgba(0, 176, 255, 0.2);
+  border: 1px solid rgba(0, 176, 255, 0.4);
+  border-radius: 20px;
+  color: #00B0FF;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .context-buttons {
+    gap: 1rem;
+  }
+  
+  .context-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .context-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

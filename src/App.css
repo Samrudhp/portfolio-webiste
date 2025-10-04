@@ -1,0 +1,41 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #0D1117;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00FFA3 0%, #00B0FF 100%);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00B0FF 0%, #FF3C78 100%);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(0, 255, 163, 0.3);
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background: rgba(0, 255, 163, 0.3);
+  color: #FFFFFF;
+}
+
