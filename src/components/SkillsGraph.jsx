@@ -64,10 +64,11 @@ function SkillNode({ skill, isHighlighted, isFiltered, onClick, onHover }) {
       
       {/* Always show label - positioned below node */}
       <Html 
-        position={[skill.x, skill.y - 0.5, skill.z]} 
+        position={[skill.x, skill.y - 0.7, skill.z]} 
         center
         style={{ pointerEvents: 'none' }}
         zIndexRange={[0, 0]}
+        distanceFactor={12}
       >
         <div className={`skill-label ${hovered ? 'hovered' : ''} ${isFiltered ? 'filtered' : ''}`}
              style={{ color }}>

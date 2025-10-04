@@ -29,6 +29,9 @@
   box-shadow: 0 0 30px rgba(0, 255, 163, 0.1);
   cursor: grab;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
+  isolation: isolate;
 }
 
 .skills-canvas-container:active {
@@ -37,27 +40,31 @@
 
 /* Skill Labels - Always visible */
 .skill-label {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 600;
   white-space: nowrap;
-  text-shadow: 0 0 8px currentColor;
-  opacity: 0.9;
+  text-shadow: 0 0 6px currentColor;
+  opacity: 0.85;
   transition: all 0.3s ease;
-  padding: 3px 7px;
-  border-radius: 4px;
-  background: rgba(13, 17, 23, 0.8);
-  backdrop-filter: blur(4px);
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: rgba(13, 17, 23, 0.75);
+  backdrop-filter: blur(3px);
   pointer-events: none;
   user-select: none;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .skill-label.hovered {
-  font-size: 13px;
+  font-size: 12px;
   opacity: 1;
   text-shadow: 0 0 15px currentColor;
-  transform: translateY(-2px);
+  transform: translateY(-3px) scale(1.1);
   background: rgba(13, 17, 23, 0.95);
-  z-index: 1000;
+  z-index: 2;
+  padding: 3px 7px;
 }
 
 .skill-label.filtered {
@@ -75,7 +82,8 @@
   box-shadow: 0 0 20px currentColor;
   pointer-events: none;
   user-select: none;
-  z-index: 1001;
+  z-index: 3;
+  position: relative;
 }
 
 .category-label {

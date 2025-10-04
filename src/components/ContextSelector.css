@@ -1,8 +1,21 @@
 .context-selector {
   padding: 3rem 2rem;
-  background: #0D1117;
+  background: rgba(13, 17, 23, 0.98);
   border-top: 2px solid rgba(0, 255, 163, 0.2);
   border-bottom: 2px solid rgba(0, 255, 163, 0.2);
+  position: sticky;
+  top: 80px;
+  z-index: 999;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.context-selector.scrolled {
+  padding: 1rem 2rem;
+  background: rgba(13, 17, 23, 0.95);
+  box-shadow: 0 8px 30px rgba(0, 255, 163, 0.2);
+  border-bottom: 2px solid rgba(0, 255, 163, 0.4);
 }
 
 .context-container {
@@ -16,24 +29,38 @@
   font-size: 1.1rem;
   margin-bottom: 2rem;
   display: flex;
+  transition: all 0.3s ease;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
 }
 
+.context-selector.scrolled .context-label {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
 .query-icon {
-  font-size: 1.1rem;
-  font-weight: 800;
-  width: 35px;
-  height: 35px;
-  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #00FFA3 0%, #00B0FF 100%);
+  border-radius: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #00FFA3;
-  border-radius: 6px;
-  background: rgba(0, 255, 163, 0.1);
-  color: #00FFA3;
-  box-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0D1117;
+  margin-right: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+  transition: all 0.3s ease;
+}
+
+.context-selector.scrolled .query-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 0.85rem;
+  margin-right: 8px;
 }
 
 .context-buttons {
@@ -54,6 +81,11 @@
   cursor: pointer;
   transition: all 0.3s ease;
   overflow: hidden;
+}
+
+.context-selector.scrolled .context-button {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.95rem;
 }
 
 .context-button.all {
@@ -127,6 +159,14 @@
   background: rgba(0, 255, 163, 0.05);
   border-radius: 10px;
   border: 1px solid rgba(0, 255, 163, 0.2);
+  transition: all 0.3s ease;
+}
+
+.context-selector.scrolled .context-info {
+  margin-top: 1rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  gap: 0.6rem;
 }
 
 .info-icon {
@@ -142,6 +182,13 @@
   background: rgba(0, 255, 163, 0.1);
   color: #00FFA3;
   box-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
+  transition: all 0.3s ease;
+}
+
+.context-selector.scrolled .info-icon {
+  width: 20px;
+  height: 20px;
+  font-size: 0.75rem;
 }
 
 .context-info strong {
@@ -156,6 +203,12 @@
   border-radius: 20px;
   color: #00B0FF;
   font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.context-selector.scrolled .similarity-badge {
+  padding: 0.2rem 0.7rem;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 768px) {

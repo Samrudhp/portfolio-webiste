@@ -1,10 +1,30 @@
+import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { contexts } from '../data/mockData';
 import './ContextSelector.css';
 
 function ContextSelector({ selectedContext, onContextChange }) {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (sectionRef.current) {
+        const rect = sectionRef.current.getBoundingClientRect();
+        // Add scrolled class when section reaches top of viewport (below navbar)
+        if (rect.top <= 80) {
+          sectionRef.current.classList.add('scrolled');
+        } else {
+          sectionRef.current.classList.remove('scrolled');
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="context-selector" id="context-selector">
+    <section className="context-selector" id="context-selector" ref={sectionRef}>
       <motion.div
         className="context-container"
         initial={{ opacity: 0, y: -20 }}
