@@ -88,9 +88,12 @@ function ProjectCard({ project, index }) {
           )}
         </div>
         
-        <div className="card-footer">
-          <span className="retrieval-badge">Retrieved</span>
-          <span className="click-hint">Click for details →</span>
+                <div className="card-footer">
+          <span className="retrieval-badge">📊 {project.similarity}% match</span>
+          <button className="details-button">
+            View Details
+            <span className="arrow-icon">→</span>
+          </button>
         </div>
       </motion.div>
       

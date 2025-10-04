@@ -325,9 +325,13 @@ function SkillsGraph({ selectedContext, onSkillClick }) {
               transition={{ delay: index * 0.1, duration: 0.4 }}
             >
               <h3 className="skill-category-title">{category}</h3>
-              <p className="skill-category-items">
-                {skillsList.join(', ')}
-              </p>
+              <div className="skill-category-items">
+                {skillsList.map((skill, idx) => (
+                  <span key={idx} className="skill-item-badge">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </motion.div>
