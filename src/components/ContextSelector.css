@@ -212,8 +212,25 @@
 }
 
 @media (max-width: 768px) {
+  .context-selector {
+    padding: 2rem 1rem;
+  }
+  
+  .context-selector.scrolled {
+    padding: 0.8rem 1rem;
+  }
+  
+  .context-label {
+    font-size: 0.95rem;
+  }
+  
+  .context-selector.scrolled .context-label {
+    font-size: 0.75rem;
+  }
+  
   .context-buttons {
-    gap: 1rem;
+    gap: 0.8rem;
+    flex-wrap: wrap;
   }
   
   .context-button {
@@ -221,8 +238,61 @@
     font-size: 1rem;
   }
   
+  .context-selector.scrolled .context-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
   .context-info {
     flex-direction: column;
     gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  
+  .context-selector.scrolled .context-info {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .context-selector {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .context-selector.scrolled {
+    padding: 0.6rem 0.5rem;
+  }
+  
+  .context-label {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .query-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.9rem;
+  }
+  
+  .context-selector.scrolled .query-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+  }
+  
+  .context-buttons {
+    gap: 0.6rem;
+  }
+  
+  .context-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .context-selector.scrolled .context-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
   }
 }

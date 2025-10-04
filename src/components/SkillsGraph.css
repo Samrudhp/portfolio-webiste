@@ -328,12 +328,22 @@
 }
 
 @media (max-width: 768px) {
+  .skills-graph {
+    padding: 3rem 1rem;
+  }
+  
   .skills-canvas-container {
     height: 500px;
+    border-radius: 10px;
   }
   
   .section-title {
     font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
   }
   
   .skill-tooltip {
@@ -351,11 +361,17 @@
   }
   
   .category-label {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
   
   .skill-label {
-    font-size: 11px;
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  
+  .skill-label.hovered {
+    font-size: 10px;
   }
 
   .all-skills-list {
@@ -375,5 +391,38 @@
   .show-skills-btn {
     padding: 0.9rem 2rem;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-graph {
+    padding: 2rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .skills-canvas-container {
+    height: 400px;
+  }
+  
+  .skill-label {
+    font-size: 7px;
+    padding: 1px 3px;
+  }
+  
+  .category-label {
+    font-size: 12px;
+  }
+  
+  .show-skills-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .all-skills-list {
+    padding: 1rem;
+    margin: 1.5rem 0.5rem 0;
   }
 }

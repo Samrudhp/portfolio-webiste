@@ -119,12 +119,28 @@
 }
 
 @media (max-width: 968px) {
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+  
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
   .nav-links {
     display: none;
   }
   
-  .nav-container {
-    justify-content: center;
+  .nav-connect-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    margin-left: 0;
   }
 }
 
