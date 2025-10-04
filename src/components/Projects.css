@@ -334,68 +334,141 @@
 
 @media (max-width: 768px) {
   .projects {
-    padding: 3rem 1rem;
+    padding: 2rem 0.8rem;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
   }
   
   .section-subtitle {
-    font-size: 0.95rem;
-    padding: 0 1rem;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-stats {
+    gap: 1.5rem;
+    margin: 1rem 0 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
   .project-card {
-    padding: 1.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  
+  .card-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .tech-stack {
+    gap: 0.4rem;
+  }
+  
+  .tech-tag {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
   }
   
   .modal-content {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1rem;
   }
   
   .modal-header h2 {
-    font-size: 1.5rem;
-  }
-  
-  .projects-stats {
-    gap: 2rem;
-  }
-  
-  .stat-number {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 }
 
 @media (max-width: 480px) {
   .projects {
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
   
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.75rem;
+  }
+  
+  .projects-stats {
+    gap: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.4rem;
+  }
+  
+  .stat-label {
+    font-size: 0.7rem;
   }
   
   .project-card {
-    padding: 1.2rem;
+    padding: 0.8rem;
+    border-radius: 10px;
   }
   
   .card-header h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+  
+  .category-badge {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 0.8rem;
+    margin: 0.6rem 0;
+  }
+  
+  .tech-tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.65rem;
+  }
+  
+  .card-footer {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+  }
+  
+  .retrieval-badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
   }
   
   .modal-content {
-    padding: 1.5rem 1rem;
-    margin: 1rem;
+    padding: 1rem 0.8rem;
+    margin: 0.5rem;
+    border-radius: 15px;
+  }
+  
+  .modal-header h2 {
+    font-size: 1.1rem;
   }
   
   .projects-stats {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 }

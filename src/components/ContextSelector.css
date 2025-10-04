@@ -1,5 +1,5 @@
 .context-selector {
-  padding: 3rem 2rem;
+  padding: 1.5rem 2rem;
   background: rgba(13, 17, 23, 0.98);
   border-top: 2px solid rgba(0, 255, 163, 0.2);
   border-bottom: 2px solid rgba(0, 255, 163, 0.2);
@@ -12,7 +12,7 @@
 }
 
 .context-selector.scrolled {
-  padding: 1rem 2rem;
+  padding: 0.6rem 2rem;
   background: rgba(13, 17, 23, 0.95);
   box-shadow: 0 8px 30px rgba(0, 255, 163, 0.2);
   border-bottom: 2px solid rgba(0, 255, 163, 0.4);
@@ -26,8 +26,8 @@
 .context-label {
   text-align: center;
   color: #8B949E;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
   display: flex;
   transition: all 0.3s ease;
   align-items: center;
@@ -36,44 +36,44 @@
 }
 
 .context-selector.scrolled .context-label {
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .query-icon {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   background: linear-gradient(135deg, #00FFA3 0%, #00B0FF 100%);
-  border-radius: 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #0D1117;
-  margin-right: 12px;
+  margin-right: 8px;
   box-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
   transition: all 0.3s ease;
 }
 
 .context-selector.scrolled .query-icon {
-  width: 24px;
-  height: 24px;
-  font-size: 0.85rem;
-  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  margin-right: 6px;
 }
 
 .context-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 0.8rem;
   flex-wrap: wrap;
 }
 
 .context-button {
   position: relative;
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
+  padding: 0.7rem 1.8rem;
+  font-size: 0.95rem;
   font-weight: 600;
   background: transparent;
   border: 2px solid;
@@ -84,8 +84,8 @@
 }
 
 .context-selector.scrolled .context-button {
-  padding: 0.6rem 1.5rem;
-  font-size: 0.95rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.85rem;
 }
 
 .context-button.all {
@@ -97,7 +97,10 @@
 .context-button.all.active {
   border-color: #C9D1D9;
   color: #FFFFFF;
-  box-shadow: 0 0 20px rgba(201, 209, 217, 0.4);
+  background: rgba(201, 209, 217, 0.15);
+  box-shadow: 0 0 25px rgba(201, 209, 217, 0.5),
+              inset 0 0 20px rgba(201, 209, 217, 0.1);
+  transform: translateY(-2px);
 }
 
 .context-button.sde {
@@ -108,8 +111,13 @@
 .context-button.sde:hover,
 .context-button.sde.active {
   border-color: #00B0FF;
-  background: rgba(0, 176, 255, 0.1);
-  box-shadow: 0 0 25px rgba(0, 176, 255, 0.6);
+  background: rgba(0, 176, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 176, 255, 0.7),
+              0 0 60px rgba(0, 176, 255, 0.4),
+              inset 0 0 20px rgba(0, 176, 255, 0.15);
+  transform: translateY(-2px);
+  color: #00D4FF;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
 }
 
 .context-button.ai-ml {
@@ -120,8 +128,13 @@
 .context-button.ai-ml:hover,
 .context-button.ai-ml.active {
   border-color: #00FFA3;
-  background: rgba(0, 255, 163, 0.1);
-  box-shadow: 0 0 25px rgba(0, 255, 163, 0.6);
+  background: rgba(0, 255, 163, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 163, 0.7),
+              0 0 60px rgba(0, 255, 163, 0.4),
+              inset 0 0 20px rgba(0, 255, 163, 0.15);
+  transform: translateY(-2px);
+  color: #00FFA3;
+  text-shadow: 0 0 15px rgba(0, 255, 163, 0.8);
 }
 
 .context-button.genai {
@@ -132,8 +145,13 @@
 .context-button.genai:hover,
 .context-button.genai.active {
   border-color: #FF3C78;
-  background: rgba(255, 60, 120, 0.1);
-  box-shadow: 0 0 25px rgba(255, 60, 120, 0.6);
+  background: rgba(255, 60, 120, 0.2);
+  box-shadow: 0 0 30px rgba(255, 60, 120, 0.7),
+              0 0 60px rgba(255, 60, 120, 0.4),
+              inset 0 0 20px rgba(255, 60, 120, 0.15);
+  transform: translateY(-2px);
+  color: #FF5A8F;
+  text-shadow: 0 0 15px rgba(255, 60, 120, 0.8);
 }
 
 .active-indicator {
@@ -141,39 +159,59 @@
   bottom: -2px;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: currentColor;
-  box-shadow: 0 0 10px currentColor;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 15px currentColor,
+              0 -2px 10px currentColor;
+  filter: brightness(1.3);
 }
 
 .context-info {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 0.8rem;
   color: #C9D1D9;
-  font-size: 1rem;
-  padding: 1rem;
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
   background: rgba(0, 255, 163, 0.05);
   border-radius: 10px;
   border: 1px solid rgba(0, 255, 163, 0.2);
   transition: all 0.3s ease;
 }
 
+.filter-status {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-text {
+  font-weight: 700;
+  color: #00FFA3;
+  text-shadow: 0 0 10px rgba(0, 255, 163, 0.5);
+  font-size: 0.9rem;
+}
+
 .context-selector.scrolled .context-info {
-  margin-top: 1rem;
-  padding: 0.5rem 0.8rem;
-  font-size: 0.85rem;
-  gap: 0.6rem;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.75rem;
+  gap: 0.5rem;
+}
+
+.context-selector.scrolled .filter-text {
+  font-size: 0.8rem;
 }
 
 .info-icon {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 800;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -186,9 +224,9 @@
 }
 
 .context-selector.scrolled .info-icon {
-  width: 20px;
-  height: 20px;
-  font-size: 0.75rem;
+  width: 18px;
+  height: 18px;
+  font-size: 0.7rem;
 }
 
 .context-info strong {
@@ -197,102 +235,199 @@
 }
 
 .similarity-badge {
-  padding: 0.3rem 1rem;
-  background: rgba(0, 176, 255, 0.2);
+  padding: 0.25rem 0.8rem;
+  background: linear-gradient(135deg, rgba(0, 176, 255, 0.2) 0%, rgba(157, 78, 221, 0.15) 100%);
   border: 1px solid rgba(0, 176, 255, 0.4);
-  border-radius: 20px;
+  border-radius: 12px;
   color: #00B0FF;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 176, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .context-selector.scrolled .similarity-badge {
-  padding: 0.2rem 0.7rem;
-  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.65rem;
 }
 
 @media (max-width: 768px) {
   .context-selector {
-    padding: 2rem 1rem;
+    padding: 1rem 0.8rem;
   }
   
   .context-selector.scrolled {
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 0.8rem;
   }
   
   .context-label {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
   }
   
   .context-selector.scrolled .context-label {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .query-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 0.8rem;
+  }
+  
+  .context-selector.scrolled .query-icon {
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
   }
   
   .context-buttons {
-    gap: 0.8rem;
+    gap: 0.6rem;
     flex-wrap: wrap;
   }
   
   .context-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    border-width: 1.5px;
   }
   
   .context-selector.scrolled .context-button {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.75rem;
   }
   
   .context-info {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.8rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
+    margin-top: 0.6rem;
+  }
+  
+  .filter-status {
+    gap: 0.3rem;
+  }
+  
+  .filter-text {
+    font-size: 0.8rem;
   }
   
   .context-selector.scrolled .context-info {
-    font-size: 0.75rem;
-    padding: 0.4rem 0.6rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .context-selector {
-    padding: 1.5rem 0.5rem;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
+    margin-top: 0.4rem;
   }
   
-  .context-selector.scrolled {
-    padding: 0.6rem 0.5rem;
+  .context-selector.scrolled .filter-text {
+    font-size: 0.7rem;
   }
   
-  .context-label {
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .query-icon {
-    width: 24px;
-    height: 24px;
-    font-size: 0.9rem;
-  }
-  
-  .context-selector.scrolled .query-icon {
+  .info-icon {
     width: 18px;
     height: 18px;
     font-size: 0.7rem;
   }
   
+  .context-selector.scrolled .info-icon {
+    width: 14px;
+    height: 14px;
+    font-size: 0.6rem;
+  }
+  
+  .similarity-badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+  }
+  
+  .context-selector.scrolled .similarity-badge {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .context-selector {
+    padding: 0.8rem 0.5rem;
+  }
+  
+  .context-selector.scrolled {
+    padding: 0.4rem 0.5rem;
+  }
+  
+  .context-label {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .context-selector.scrolled .context-label {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .query-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    margin-right: 4px;
+  }
+  
+  .context-selector.scrolled .query-icon {
+    width: 14px;
+    height: 14px;
+    font-size: 0.55rem;
+  }
+  
   .context-buttons {
-    gap: 0.6rem;
+    gap: 0.4rem;
   }
   
   .context-button {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
   }
   
   .context-selector.scrolled .context-button {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.7rem;
+  }
+  
+  .context-info {
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    padding: 0.35rem 0.5rem;
+    gap: 0.4rem;
+    justify-content: center;
+  }
+  
+  .filter-status {
+    gap: 0.25rem;
+  }
+  
+  .filter-text {
+    font-size: 0.75rem;
+  }
+  
+  .context-selector.scrolled .context-info {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.4rem;
+  }
+  
+  .context-selector.scrolled .filter-text {
+    font-size: 0.65rem;
+  }
+  
+  .similarity-badge {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+  }
+  
+  .context-selector.scrolled .similarity-badge {
+    font-size: 0.6rem;
+    padding: 0.12rem 0.4rem;
   }
 }

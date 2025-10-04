@@ -61,19 +61,6 @@ function ContextSelector({ selectedContext, onContextChange }) {
             </motion.button>
           ))}
         </div>
-        
-        {selectedContext !== 'All' && (
-          <motion.div
-            className="context-info"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-          >
-            <span className="info-icon">⚡</span>
-            <span>Filtering by: <strong>{selectedContext}</strong></span>
-            <span className="similarity-badge">Top skills highlighted</span>
-          </motion.div>
-        )}
       </motion.div>
     </section>
   );
