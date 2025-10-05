@@ -1,9 +1,9 @@
 .achievements {
-  padding: 6rem 3rem;
+  padding: 3rem 3rem 6rem;
   background: #161B22;
   position: relative;
   overflow: hidden;
-  scroll-margin-top: 200px;
+  padding-bottom: 250px;
 }
 
 .achievements-grid {
@@ -101,14 +101,13 @@
 
 @media (max-width: 768px) {
   .achievements {
-    padding: 4rem 1.5rem 3rem;
+    padding: 2rem 1.5rem 3rem;
     scroll-margin-top: 180px;
   }
   
   .section-title {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    padding-top: 1rem;
   }
   
   .section-subtitle {
