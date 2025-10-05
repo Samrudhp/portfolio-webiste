@@ -2,6 +2,7 @@
   padding: 5rem 2rem;
   background: #161B22;
   min-height: 100vh;
+  scroll-margin-top: 200px;
 }
 
 .projects-stats {

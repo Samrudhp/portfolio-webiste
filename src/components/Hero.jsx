@@ -307,7 +307,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            AI/ML Engineer • Full Stack Developer • GenAI Enthusiast
+            GenAI Enthusiast • AI/ML • Full Stack (MERN)
           </motion.p>
           
           <motion.button

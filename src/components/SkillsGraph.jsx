@@ -199,7 +199,7 @@ function SkillsGraph({ selectedContext, onSkillClick }) {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Skills Vector Space
+        SKILLS VECTOR SPACE
       </motion.h2>
       
       <motion.p

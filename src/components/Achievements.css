@@ -1,8 +1,9 @@
 .achievements {
-  padding: 8rem 2rem;
-  background: linear-gradient(180deg, #0D1117 0%, #161B22 50%, #0D1117 100%);
+  padding: 5rem 2rem;
+  background: #161B22;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 200px;
 }
 
 .achievements-grid {
