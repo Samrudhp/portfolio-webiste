@@ -43,9 +43,9 @@ export const projects = [
   // GenAI Projects
   {
     id: 1,
-    title: "TriFusion Family Care AI",
+    title: "GenAI Powered Multimodal Anomaly Detection System",
     context: "GenAI",
-    description: "Samsung PRISM GenAI Hackathon 2025 - Revolutionary multimodal AI platform for family safety monitoring",
+    description: "Samsung PRISM GenAI Hackathon 2025 - Revolutionary multimodal AI platform for anomaly detection built on novel architecture",
     techStack: ["Python", "Multimodal AI", "LLM", "Real-time Processing"],
     details: "Advanced family safety monitoring solution with real-time video analysis, audio processing, pose detection, and LLM reasoning. Features Two-Tier AI architecture with <100ms response time and production-ready deployment.",
     link: "https://github.com/Samrudhp/anomaly-detection-TriFusion"
@@ -54,7 +54,7 @@ export const projects = [
     id: 2,
     title: "OnDevice-Multimodal-Agent",
     context: "GenAI",
-    description: "Samsung EnnovateX 2025 AI Challenge - Multimodal AI agents running on-device",
+    description: "Samsung EnnovateX 2025 AI Challenge - Multimodal AI agents running on-device for anomaly detection and context-aware interactions",
     techStack: ["Python", "TypeScript", "Multimodal AI", "On-Device AI"],
     details: "Intelligent agents that process multiple types of input data locally, focusing on privacy and performance with on-device processing capabilities.",
     link: "https://github.com/Samrudhp/OnDevice-Multimodal-Agent"
@@ -63,7 +63,7 @@ export const projects = [
     id: 3,
     title: "LegalCase-Retrieval-System",
     context: "GenAI",
-    description: "Comprehensive RAG system for legal case retrieval with advanced AI/ML features",
+    description: "Comprehensive RAG system for legal case retrieval with advanced GenAI features",
     techStack: ["FastAPI", "React", "LegalBERT", "FAISS", "MongoDB"],
     details: "Advanced legal RAG system with LegalBERT embeddings, FAISS vector search, chat system with intent classification, summarization, and question generation.",
     link: "https://github.com/Samrudhp/LegalCase-Retrieval-System"
