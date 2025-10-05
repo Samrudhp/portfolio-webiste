@@ -277,13 +277,14 @@
 
 @media (max-width: 768px) {
   .education {
-    padding: 3rem 1.5rem;
+    padding: 4rem 1.5rem 3rem;
     scroll-margin-top: 180px;
   }
   
   .section-title {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+    padding-top: 1rem;
   }
   
   .section-subtitle {
