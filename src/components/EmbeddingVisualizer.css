@@ -313,7 +313,8 @@
 
 @media (max-width: 768px) {
   .embedding-visualizer {
-    padding: 2rem 1rem;
+    padding: 3rem 1.5rem;
+    scroll-margin-top: 180px;
   }
   
   .section-title {

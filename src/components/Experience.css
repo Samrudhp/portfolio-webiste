@@ -157,6 +157,7 @@
 @media (max-width: 768px) {
   .experience {
     padding: 3rem 1rem;
+    scroll-margin-top: 180px;
   }
   
   .section-title {

@@ -436,6 +436,7 @@
 @media (max-width: 768px) {
   .skills-graph {
     padding: 3rem 1rem;
+    scroll-margin-top: 180px;
   }
   
   .skills-canvas-container {

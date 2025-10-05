@@ -256,6 +256,7 @@
 @media (max-width: 768px) {
   .context-selector {
     padding: 1rem 0.8rem;
+    top: 56px;
   }
   
   .context-selector.scrolled {
