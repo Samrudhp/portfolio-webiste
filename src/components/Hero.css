@@ -41,7 +41,7 @@
 }
 
 .hero-name {
-  font-size: clamp(4rem, 12vw, 8.5rem);
+  font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 900;
   margin: 0;
   background: linear-gradient(135deg, 

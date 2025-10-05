@@ -108,7 +108,7 @@
 
 .card-title {
   color: #C9D1D9;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0;
   flex: 1;
 }
@@ -126,6 +126,7 @@
   color: #8B949E;
   line-height: 1.6;
   margin: 1rem 0;
+  font-size: 0.95rem;
 }
 
 .card-tech {
@@ -140,7 +141,7 @@
   color: #8B949E;
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   border: 1px solid rgba(139, 148, 158, 0.3);
 }
 

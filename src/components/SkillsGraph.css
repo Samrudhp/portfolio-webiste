@@ -8,17 +8,23 @@
 
 .section-title {
   text-align: center;
-  font-size: 3rem;
-  color: #00FFA3;
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: 0 0 20px rgba(0, 255, 163, 0.5);
+  background: linear-gradient(135deg, #00FFA3 0%, #00B0FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .section-subtitle {
   text-align: center;
-  font-size: 1.1rem;
   color: #8B949E;
+  font-size: 1rem;
   margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .skills-canvas-container {
@@ -136,9 +142,9 @@
 
 .tooltip-header h3 {
   color: #00FFA3;
-  margin: 0;
-  font-size: 1.8rem;
-  text-shadow: 0 0 20px rgba(0, 255, 163, 0.6);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  text-shadow: 0 0 15px rgba(0, 255, 163, 0.5);
 }
 
 .category-badge {
@@ -183,14 +189,14 @@
 
 .tooltip-details .label {
   color: #8B949E;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .tooltip-details .value {
   color: #00B0FF;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
