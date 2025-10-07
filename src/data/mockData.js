@@ -70,6 +70,15 @@ export const projects = [
   },
   {
     id: 4,
+    title: "RAG Powered EduSummary - Context Aware-Study Notes Generator",
+    context: "GenAI",
+    description: "Context-aware AI application generating study materials from textbook content using RAG techniques",
+    techStack: ["LangChain", "LocalInference", "LLMs", "React", "RAG"],
+    details: "Generates concise study notes, Q&A flashcards, mnemonics, and concept maps using all-mpnet-base-v2 model with local inference for Embedding , GPT-4All for LLM reasoning and modern UI.",
+    link: "https://github.com/Samrudhp/EduSummaryV2"
+  },
+  {
+    id: 5,
     title: "SpeakScribe - AI Audio Summarizer",
     context: "GenAI",
     description: "Meeting summarizer with transcription and AI-powered summarization",
@@ -77,15 +86,7 @@ export const projects = [
     details: "Transcribes and summarizes audio recordings with drag-and-drop upload, waveform visualization, AssemblyAI transcription, and T5/BART summarization models.",
     link: "https://github.com/Samrudhp/SpeakScribe"
   },
-  {
-    id: 5,
-    title: "EduSummary - Study Notes Generator",
-    context: "GenAI",
-    description: "Context-aware AI application generating study materials from textbook content",
-    techStack: ["LangChain", "Groq", "LLMs", "React", "Tailwind CSS"],
-    details: "Generates concise study notes, Q&A flashcards, mnemonics, and concept maps using llama3-70b-8192 model with fast inference and modern UI.",
-    link: "https://github.com/Samrudhp/EduSummary"
-  },
+
 
   // AI/ML Projects
   {
