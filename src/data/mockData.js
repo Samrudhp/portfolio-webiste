@@ -64,7 +64,7 @@ export const projects = [
     title: "LegalCase-Retrieval-System",
     context: "GenAI",
     description: "Comprehensive RAG system for legal case retrieval with advanced GenAI features",
-    techStack: ["FastAPI", "React", "LegalBERT", "FAISS", "MongoDB"],
+    techStack: ["FastAPI", "React", "LegalBERT", "FAISS", "MongoDB","Langchain"],
     details: "Advanced legal RAG system with LegalBERT embeddings, FAISS vector search, chat system with intent classification, summarization, and question generation.",
     link: "https://github.com/Samrudhp/LegalCase-Retrieval-System"
   },
@@ -79,11 +79,11 @@ export const projects = [
   },
   {
     id: 5,
-    title: "SpeakScribe - AI Audio Summarizer",
+    title: "SpeakScribe - Advanced AI Meeting Summarizer",
     context: "GenAI",
     description: "Meeting summarizer with transcription and AI-powered summarization",
-    techStack: ["React", "FastAPI", "AssemblyAI", "T5/BART", "WaveSurfer.js"],
-    details: "Transcribes and summarizes audio recordings with drag-and-drop upload, waveform visualization, AssemblyAI transcription, and T5/BART summarization models.",
+    techStack: ["React", "FastAPI", "Whisper", "GPT-4All", "WaveSurfer.js"],
+    details: "Transcribes and summarizes audio recordings with drag-and-drop upload, waveform visualization, Whisper transcription, GPT-4All summarization models and all run locally with privacy focus.",
     link: "https://github.com/Samrudhp/SpeakScribe"
   },
 
