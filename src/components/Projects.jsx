@@ -22,9 +22,19 @@ function ProjectModal({ project, onClose }) {
         <button className="modal-close" onClick={onClose}>×</button>
         
         <h2 className="modal-title">{project.title}</h2>
-        <span className={`modal-category ${project.context.toLowerCase().replace('/', '-')}`}>
-          {project.context}
-        </span>
+        <div className="modal-tags">
+          {project.tags && project.tags.length > 0 ? (
+            project.tags.map((tag, i) => (
+              <span key={i} className={`modal-category ${tag.toLowerCase().replace('/', '-')}`}>
+                {tag}
+              </span>
+            ))
+          ) : (
+            <span className={`modal-category ${project.context.toLowerCase().replace('/', '-')}`}>
+              {project.context}
+            </span>
+          )}
+        </div>
         
         <p className="modal-description">{project.details}</p>
         
@@ -72,9 +82,19 @@ function ProjectCard({ project, index }) {
       >
         <div className="card-header">
           <h3 className="card-title">{project.title}</h3>
-          <span className={`card-category ${project.context.toLowerCase().replace('/', '-')}`}>
-            {project.context}
-          </span>
+          <div className="card-tags">
+            {project.tags && project.tags.length > 0 ? (
+              project.tags.map((tag, i) => (
+                <span key={i} className={`card-category ${tag.toLowerCase().replace('/', '-')}`}>
+                  {tag}
+                </span>
+              ))
+            ) : (
+              <span className={`card-category ${project.context.toLowerCase().replace('/', '-')}`}>
+                {project.context}
+              </span>
+            )}
+          </div>
         </div>
         
         <p className="card-description">{project.description}</p>
@@ -109,7 +129,13 @@ function ProjectCard({ project, index }) {
 function Projects({ selectedContext }) {
   const filteredProjects = selectedContext === 'All'
     ? projects
-    : projects.filter(p => p.context === selectedContext);
+    : projects.filter(p => {
+        // Check if project has tags array, if yes use it, otherwise fallback to context
+        if (p.tags && Array.isArray(p.tags)) {
+          return p.tags.includes(selectedContext);
+        }
+        return p.context === selectedContext;
+      });
   
   return (
     <section className="projects" id="projects">

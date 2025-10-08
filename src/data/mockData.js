@@ -63,6 +63,7 @@ export const projects = [
     id: 3,
     title: "LegalCase-Retrieval-System",
     context: "GenAI",
+    tags: ["GenAI", "SDE"], // Shows in both categories
     description: "Comprehensive RAG system for legal case retrieval with advanced GenAI features",
     techStack: ["FastAPI", "React", "LegalBERT", "FAISS", "MongoDB","Langchain"],
     details: "Advanced legal RAG system with LegalBERT embeddings, FAISS vector search, chat system with intent classification, summarization, and question generation.",
@@ -165,12 +166,13 @@ export const projects = [
   // Full-Stack SDE Projects
   {
     id: 14,
-    title: "EV Range Prediction Website",
+    title: " GenAI-Powered EV Assistant with Dual RAG Architecture",
     context: "SDE",
-    description: "Full-stack EV journey optimization with range prediction",
+    tags: ["SDE", "GenAI"], // Shows in both categories
+    description: " GenAI-Powered EV Assistant with Dual RAG Architecture where all models runs locally..",
     techStack: ["React", "Node.js", "Express", "MongoDB", "Leaflet"],
-    details: "Predicts EV range based on routes, battery status, and trip data with OpenRouteService API integration, ML model, and interactive mapping.",
-    link: "https://github.com/Samrudhp/EV-Range-Prediction-website"
+    details: "A production-ready, full-stack application featuring a novel Dual RAG system that combines community-wide trip knowledge with personalized driving patterns. Powered by local LLM (Orca Mini 3B) and ChromaDB vector database, delivering intelligent EV range predictions, route planning, and AI-driven insights - all running 100% locally with zero API costs!",
+    link: "https://github.com/Samrudhp/GenAI-Powered_EV_Assistant_with_Dual_RAG_Architecture"
   },
   {
     id: 15,
