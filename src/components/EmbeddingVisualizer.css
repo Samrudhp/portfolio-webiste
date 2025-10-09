@@ -23,7 +23,7 @@
   border: 2px solid rgba(0, 255, 163, 0.3);
   border-radius: 50px;
   color: #C9D1D9;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -44,7 +44,7 @@
   border: none;
   border-radius: 50px;
   color: #0D1117;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -218,7 +218,7 @@
 
 .result-title {
   color: #C9D1D9;
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   margin: 0.5rem 0;
 }
 
@@ -255,7 +255,7 @@
   text-align: center;
   padding: 3rem;
   color: #8B949E;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .visualization-info {
@@ -270,7 +270,7 @@
   background: rgba(22, 27, 34, 0.6);
   border: 2px solid rgba(0, 176, 255, 0.3);
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -301,7 +301,7 @@
 
 .info-card h3 {
   color: #00B0FF;
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   margin: 1rem 0;
 }
 
@@ -313,7 +313,7 @@
 
 @media (max-width: 768px) {
   .embedding-visualizer {
-    padding: 2rem 1.5rem 3rem;
+    padding: 1.5rem 1.5rem 3rem;
   }
   
   .section-title {

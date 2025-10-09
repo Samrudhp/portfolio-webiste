@@ -16,7 +16,7 @@
   background: rgba(22, 27, 34, 0.8);
   border: 2px solid rgba(0, 255, 163, 0.2);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
   width: 100%;
 }
@@ -43,11 +43,11 @@
 }
 
 .header-icon {
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   font-weight: 900;
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,7 @@
   padding: 0.4rem 1rem;
   background: linear-gradient(135deg, rgba(0, 255, 163, 0.2), rgba(0, 176, 255, 0.15));
   border: 2px solid rgba(0, 255, 163, 0.4);
-  border-radius: 20px;
+  border-radius: 16px;
   color: #00FFA3;
   font-size: 0.9rem;
   font-weight: 700;
@@ -145,7 +145,7 @@
 
 .coursework-title {
   color: #00B0FF;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -277,7 +277,7 @@
 
 @media (max-width: 768px) {
   .education {
-    padding: 2rem 1.5rem 3rem;
+    padding: 1.5rem 1.5rem 3rem;
   }
   
   .section-title {
@@ -307,7 +307,7 @@
   }
   
   .header-content h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .degree {
@@ -353,7 +353,7 @@
   }
   
   .header-content h3 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
   
   .degree {

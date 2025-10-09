@@ -17,7 +17,7 @@
 }
 
 .footer-section {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .footer-title {
@@ -29,7 +29,7 @@
 
 .footer-subtitle {
   color: #8B949E;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -81,7 +81,7 @@
   border: none;
   border-radius: 50px;
   color: #0D1117;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -151,7 +151,7 @@
 }
 
 .social-icon {
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   font-weight: 800;
   width: 60px;
   height: 60px;
@@ -224,7 +224,7 @@
 
 @media (max-width: 968px) {
   .footer {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
   
   .footer-main {
@@ -273,7 +273,7 @@
   }
   
   .social-icon {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .social-label {

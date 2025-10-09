@@ -16,7 +16,7 @@
 .testimonial-card {
   background: rgba(13, 17, 23, 0.8);
   border: 2px solid rgba(0, 176, 255, 0.3);
-  border-radius: 20px;
+  border-radius: 16px;
   padding: 3rem;
   box-shadow: 0 0 40px rgba(0, 176, 255, 0.2);
   flex: 1;
@@ -63,7 +63,7 @@
 }
 
 .star {
-  font-size: 1.2rem;
+  font-size: 1rem;
   filter: drop-shadow(0 0 5px rgba(255, 193, 7, 0.5));
 }
 
@@ -170,13 +170,13 @@
   }
   
   .testimonial-card {
-    padding: 2rem;
+    padding: 1.5rem;
   }
   
   .nav-button {
     width: 40px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   
   .testimonial-header {

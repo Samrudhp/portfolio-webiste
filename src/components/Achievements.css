@@ -18,8 +18,8 @@
   position: relative;
   background: rgba(22, 27, 34, 0.6);
   border: 2px solid rgba(0, 255, 163, 0.2);
-  border-radius: 20px;
-  padding: 2.5rem;
+  border-radius: 16px;
+  padding: 1.8rem;
   text-align: left;
   transition: all 0.4s ease;
   cursor: pointer;
@@ -70,13 +70,13 @@
 
 .achievement-title {
   color: #00FFA3;
-  font-size: 1.3rem;
+  font-size: 0.95rem;
   margin-bottom: 0.5rem;
   text-shadow: 0 0 15px rgba(0, 255, 163, 0.3);
 }
 
 .achievement-description {
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin: 0;
@@ -101,7 +101,7 @@
 
 @media (max-width: 768px) {
   .achievements {
-    padding: 2rem 1.5rem 3rem;
+    padding: 1.5rem 1.5rem 3rem;
   }
   
   .section-title {
@@ -130,7 +130,7 @@
   }
   
   .achievement-title {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
   
   .achievement-description {
