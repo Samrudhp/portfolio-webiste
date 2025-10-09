@@ -1,6 +1,6 @@
 .experience {
   background: #0D1117;
-  padding: 3rem 3rem 6rem;
+  padding: 2rem 3rem 6rem;
   position: relative;
   overflow: hidden;
   padding-bottom: 250px;
@@ -31,7 +31,7 @@
   backdrop-filter: blur(10px);
   border: 2px solid rgba(0, 176, 255, 0.3);
   border-radius: 16px;
-  padding: 1.8rem;
+  padding: 1.2rem;
   box-shadow: 
     0 8px 32px rgba(0, 176, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -156,21 +156,21 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .experience {
-    padding: 1.5rem 1rem 3rem;
+    padding: 1rem 1rem 3rem;
   }
   
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   
   .section-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin-bottom: 2rem;
   }
 
   .exp-card {
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .card-header {
@@ -181,15 +181,15 @@
   .header-icon {
     width: 50px;
     height: 50px;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 
   .header-content h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .company {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 
   .meta-info {
@@ -198,7 +198,7 @@
   }
 
   .achievements-list li {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     padding-left: 1.3rem;
     margin-bottom: 0.6rem;
   }
@@ -206,7 +206,7 @@
 
 @media (max-width: 480px) {
   .experience {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   .section-title {

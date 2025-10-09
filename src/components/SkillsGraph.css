@@ -1,5 +1,5 @@
 .skills-graph {
-  padding: 3rem 3rem 6rem;
+  padding: 2rem 3rem 6rem;
   background: linear-gradient(180deg, #0D1117 0%, #161B22 100%);
   min-height: 100vh;
   position: relative;
@@ -124,7 +124,7 @@
   background: rgba(22, 27, 34, 0.98);
   border: 2px solid #00FFA3;
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 1rem;
   min-width: 350px;
   max-width: 500px;
   box-shadow: 0 0 40px rgba(0, 255, 163, 0.5);
@@ -435,31 +435,31 @@
 
 @media (max-width: 768px) {
   .skills-graph {
-    padding: 1.5rem 1rem 3rem;
+    padding: 1rem 1rem 3rem;
   }
   
   .skills-canvas-container {
-    height: 500px;
+    height: 400px;
     border-radius: 10px;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .section-subtitle {
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     padding: 0 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .skill-tooltip {
-    min-width: 280px;
-    padding: 1.5rem;
+    min-width: 240px;
+    padding: 1rem;
   }
   
   .tooltip-header h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   
   .tooltip-details {
@@ -468,42 +468,48 @@
   }
   
   .category-label {
-    font-size: 14px;
-    letter-spacing: 1px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
   }
   
   .skill-label {
-    font-size: 8px;
-    padding: 2px 4px;
+    font-size: 7px;
+    padding: 2px 3px;
   }
   
   .skill-label.hovered {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .all-skills-list {
-    padding: 1.5rem;
-    margin: 2rem 1rem 0;
+    padding: 1rem;
+    margin: 1.5rem 0.8rem 0;
   }
 
   .skill-category-title {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .skill-category-items {
-    font-size: 1rem;
-    padding-left: 1rem;
+    font-size: 0.65rem;
+    padding-left: 0.8rem;
   }
 
   .show-skills-btn {
-    padding: 0.9rem 2rem;
-    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 0.7rem;
+  }
+
+  .skill-item-badge {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
   }
 }
 
 @media (max-width: 480px) {
   .skills-graph {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   .section-title {

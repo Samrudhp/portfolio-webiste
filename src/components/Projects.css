@@ -1,5 +1,5 @@
 .projects {
-  padding: 3rem 3rem 6rem;
+  padding: 2rem 3rem 6rem;
   background: #161B22;
   min-height: 100vh;
   padding-bottom: 250px;
@@ -246,7 +246,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  padding: 1.5rem;
+  padding: 1rem;
   animation: fadeIn 0.3s ease;
 }
 
@@ -509,16 +509,16 @@
 
 @media (max-width: 768px) {
   .projects {
-    padding: 1.5rem 0.8rem;
+    padding: 1.2rem 0.8rem;
   }
   
   .section-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
   
   .section-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     padding: 0 0.5rem;
     margin-bottom: 1rem;
   }
@@ -529,7 +529,7 @@
   }
   
   .stat-number {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   
   .stat-label {
@@ -547,11 +547,11 @@
   }
   
   .card-header h3 {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
   
   .project-description {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     line-height: 1.5;
   }
   
@@ -565,17 +565,17 @@
   }
   
   .modal-content {
-    padding: 1.5rem 1rem;
+    padding: 1.2rem 1rem;
   }
   
   .modal-header h2 {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .projects {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   .section-title {

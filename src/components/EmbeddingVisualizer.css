@@ -1,5 +1,5 @@
 .embedding-visualizer {
-  padding: 3rem 3rem 6rem;
+  padding: 2rem 3rem 6rem;
   background: linear-gradient(180deg, #161B22 0%, #0D1117 100%);
   min-height: 100vh;
   padding-bottom: 250px;
@@ -152,7 +152,7 @@
   background: rgba(22, 27, 34, 0.6);
   border: 2px solid rgba(0, 176, 255, 0.3);
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -270,7 +270,7 @@
   background: rgba(22, 27, 34, 0.6);
   border: 2px solid rgba(0, 176, 255, 0.3);
   border-radius: 15px;
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -313,16 +313,16 @@
 
 @media (max-width: 768px) {
   .embedding-visualizer {
-    padding: 1.5rem 1.5rem 3rem;
+    padding: 1.2rem 1.5rem 3rem;
   }
   
   .section-title {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
   }
   
   .section-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     margin-bottom: 1.5rem;
   }
   
@@ -334,13 +334,13 @@
   .search-input {
     width: 100%;
     padding: 0.8rem 1rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
   
   .search-button {
     width: 100%;
     padding: 0.8rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
   
   .predefined-queries {
@@ -376,7 +376,7 @@
 
 @media (max-width: 480px) {
   .embedding-visualizer {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
   
   .section-title {
