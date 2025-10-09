@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Navigation.css';
 
-function Navigation() {
+function Navigation({ selectedContext, onContextChange }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,9 +14,10 @@ function Navigation() {
     { name: 'Projects', id: 'projects' },
     { name: 'RAG Search', id: 'embedding-visualizer' },
     { name: 'Leadership', id: 'achievements' },
-    { name: 'Education', id: 'education' },
     // { name: 'Certifications', id: 'certifications' }
   ];
+
+  const filterItems = ['All', 'GenAI', 'AI/ML', 'SDE'];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,17 +70,6 @@ function Navigation() {
           <span className="logo-text">Samrudh P</span>
         </motion.div>
 
-        {/* Hamburger Menu Button */}
-        <button 
-          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
         {/* Desktop Navigation */}
         <ul className="nav-links desktop-nav">
           {navItems.map((item, index) => (
@@ -118,7 +108,50 @@ function Navigation() {
               Connect
             </motion.button>
           </motion.li>
+
+          {/* Desktop Filter Buttons - Inline with pipe separators */}
+          {filterItems.map((filter, index) => (
+            <motion.li
+              key={filter}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: (navItems.length + 1 + index) * 0.1 }}
+              className="filter-item"
+            >
+              {index === 0 && <span className="filter-divider">|</span>}
+              <button
+                className={`filter-btn ${selectedContext === filter ? 'active' : ''}`}
+                onClick={() => onContextChange(filter)}
+              >
+                {filter}
+              </button>
+            </motion.li>
+          ))}
         </ul>
+
+        {/* Mobile Filter Buttons */}
+        <div className="nav-filters mobile-filters">
+          {filterItems.map((filter) => (
+            <button
+              key={filter}
+              className={`filter-chip ${selectedContext === filter ? 'active' : ''}`}
+              onClick={() => onContextChange(filter)}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        {/* Hamburger Menu Button */}
+        <button 
+          className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
         {/* Mobile Navigation Menu */}
         <AnimatePresence>

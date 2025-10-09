@@ -72,8 +72,9 @@
 
 .nav-links {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
   list-style: none;
+  gap: 0.3rem;
   margin: 0;
   padding: 0;
 }
@@ -83,9 +84,9 @@
   background: transparent;
   border: none;
   color: #C9D1D9;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 8px;
@@ -115,19 +116,123 @@
   background: linear-gradient(135deg, #00FFA3, #00B0FF);
   border: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  padding: 0.8rem 1.8rem;
-  border-radius: 25px;
+  padding: 0.6rem 1.3rem;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 0 20px rgba(0, 255, 163, 0.4);
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 
 .nav-connect-btn:hover {
   box-shadow: 0 0 30px rgba(0, 255, 163, 0.6);
   transform: translateY(-2px);
+}
+
+/* Filter Items - Inline with pipes */
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.filter-divider {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0 0.2rem;
+}
+
+.filter-btn {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #8B949E;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: #00FFA3;
+  background: rgba(0, 255, 163, 0.08);
+}
+
+.filter-btn.active {
+  color: #00FFA3;
+  background: rgba(0, 255, 163, 0.12);
+  font-weight: 700;
+}
+
+/* Mobile filters - hidden on desktop */
+.mobile-filters {
+  display: none;
+}
+
+/* Filter Buttons - Desktop */
+.nav-filters {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.desktop-filters {
+  display: flex;
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-filters {
+  display: none;
+}
+
+.filter-btn {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #C9D1D9;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: rgba(0, 255, 163, 0.08);
+  border-color: rgba(0, 255, 163, 0.3);
+  color: #00FFA3;
+  box-shadow: 0 0 12px rgba(0, 255, 163, 0.2);
+}
+
+.filter-btn.active {
+  background: rgba(0, 255, 163, 0.15);
+  border-color: rgba(0, 255, 163, 0.5);
+  color: #00FFA3;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 163, 0.3),
+    inset 0 0 10px rgba(0, 255, 163, 0.1);
+}
+
+.filter-underline {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #00FFA3 0%, #00B0FF 100%);
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(0, 255, 163, 0.6);
 }
 
 /* Hamburger Menu Button */
@@ -261,24 +366,75 @@
   
   .nav-container {
     padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  /* Logo - compact on mobile */
+  .nav-logo {
+    flex-shrink: 0;
+    order: 1;
   }
   
   .logo-text {
-    font-size: 1.2rem;
+    display: none; /* Hide "Samrudh P" text on mobile */
   }
   
   .logo-icon {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     font-size: 1rem;
   }
   
+  /* Hide desktop nav */
   .desktop-nav {
     display: none;
   }
   
+  /* Hide desktop filter items */
+  .filter-item {
+    display: none;
+  }
+  
+  /* Show mobile filters - center */
+  .mobile-filters {
+    display: flex;
+    gap: 0.35rem;
+    flex: 1;
+    justify-content: center;
+    order: 2;
+  }
+  
+  .filter-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #C9D1D9;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.45rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    white-space: nowrap;
+  }
+  
+  .filter-chip.active {
+    background: rgba(0, 255, 163, 0.15);
+    border-color: rgba(0, 255, 163, 0.5);
+    color: #00FFA3;
+    box-shadow: 
+      0 0 12px rgba(0, 255, 163, 0.3),
+      inset 0 0 8px rgba(0, 255, 163, 0.1);
+  }
+  
+  /* Hamburger on the far right */
   .hamburger {
     display: flex;
+    flex-shrink: 0;
+    order: 3;
   }
   
   .mobile-menu {

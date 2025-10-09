@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import SkillsGraph from './components/SkillsGraph'
-import ContextSelector from './components/ContextSelector'
 import Projects from './components/Projects'
 import Achievements from './components/Achievements'
 import EmbeddingVisualizer from './components/EmbeddingVisualizer'
@@ -28,12 +27,11 @@ function App() {
 
   return (
     <div className="app">
-      <Navigation />
-      <Hero />
-      <ContextSelector 
-        selectedContext={selectedContext} 
-        onContextChange={handleContextChange} 
+      <Navigation 
+        selectedContext={selectedContext}
+        onContextChange={handleContextChange}
       />
+      <Hero />
       <SkillsGraph 
         selectedContext={selectedContext}
         onSkillClick={handleSkillClick}
