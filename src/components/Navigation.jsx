@@ -43,10 +43,9 @@ function Navigation({ selectedContext, onContextChange }) {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80;
-      const elementPosition = element.offsetTop - offset;
+      // Scroll to top of section, no top offset needed since navbar is at bottom
       window.scrollTo({
-        top: elementPosition,
+        top: element.offsetTop,
         behavior: 'smooth'
       });
       setIsMobileMenuOpen(false); // Close menu after navigation
